@@ -1,4 +1,4 @@
-# SDBFS - A **S**imple **D**atabase **F**ile **S**ystem 
+# SDBFS - A Simple Database File System 
 
 ## About the Project
 
@@ -6,9 +6,7 @@ The project contains two files. `passthrough.py` is the implementation of a pass
 
 `myfs.py` is my implementation of a very simple database file system. It requires sqlite3 and its python module as well as Fuse and Fusepy. If you use Ubuntu or Debian you can easily acquire these dependencies via apt-get and pip. 
 
-## Known Issues
-
-The file system only supports one layer of files / directories. And this is why it is called 'very simple'.
+`myfs.py` is the legacy version. Please check `myfs.py` for the updated code. 
 
 ## License
 
