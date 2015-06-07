@@ -333,6 +333,7 @@ class DbFS(Operations):
         c = conn.cursor()
 
         c.execute("delete from files where path=?", (path,))
+        c.execute("delete from data where path=?", (path,))
 
         conn.commit()
         c.close()
