@@ -255,6 +255,8 @@ class DbFS(Operations):
         c = conn.cursor()
 
         c.execute("update files set path=? where path=?", (new, old))
+        c.execute("update files set parent=? where path=?", (os.path.dirname(new), new))
+        c.execute("update data set path=? where path=?", (new, old))
 
         conn.commit()
         c.close()
